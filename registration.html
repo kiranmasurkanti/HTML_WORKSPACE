@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Registration Forms</h1>
+
+    <hr>
+    <form action="success.html">
+        <form action="#" method="post">
+            <div>
+                <label for="">Registration Id : </label>
+                <input type="text" name="regno" value="12345" readonly>
+            </div>
+            <div>
+                <label for="">Name : </label>
+                <input type="text" name="uname" required maxlength="10">
+            </div>
+            <div>
+                <label for="">Password : </label>
+                <input type="password" name="upassword">
+            </div>
+            <div>
+                <label for="">Email : </label>
+                <input type="email" name="email" autocomplete="off">
+            </div>
+            <div>
+                <label for="">Mobile : </label>
+                <input type="text" name="mobile" pattern="^[6-9][0-9]{9}$" title="invalid input">
+            </div>
+            <div>
+                <label for="">Age : </label>
+                <input type="number" name="age" min="18" max="65">
+            </div>
+            <div>
+                <label for="">Gender : </label>
+                <input type="radio" name="gender" value="Male" />Male
+                <input type="radio" name="gender" value="Female" />Female
+                <input type="radio" name="gender" value="Male" />Others
+            </div>
+            <div>
+                <label for="">Qualifications : </label>
+                <input type="checkbox" name="qlf" value="ug" />UG
+                <input type="checkbox" name="qlf" value="pg" />PG
+                <input type="checkbox" name="qlf" value="PHD" />PHD
+            </div>
+            <div>
+                <label for="">DOB : </label>
+                <input type="date" name="dob">
+            </div>
+            <div>
+                <label for="">TOB : </label>
+                <input type="time" name="dob">
+            </div>
+            <div>
+                <label for="">Country : </label>
+                <select type="country" id="">
+                    <option value="">select</option>
+                    <option value="India">India</option>
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="clear">
+            </div>
+
+        </form>
+
+</body>
+
+</html>
